@@ -3,10 +3,10 @@ import random
 
 # Conectando ao banco de dados
 conexao = mysql.connector.connect(
-    host='127.0.0.1',
+    host='localhost',
     user='root',
-    password='bank',
-    database='Tryhackme',
+    password='admin',
+    database='Usuarios',
 )
 cursor = conexao.cursor()
 
