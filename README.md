@@ -1,2 +1,2 @@
 # ProjetoBack-end
- CRUD feito usando Python e MySQL
+ CRUD usando Python e MySQL
