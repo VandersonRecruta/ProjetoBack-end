@@ -1,6 +1,8 @@
 import mysql.connector
 from funcoes import Criar, LerDB, Atualizacao , Deletar, Cabecalho, VerificaEmail, VerificaSenha, leiaInt,Entrada, gerador_senha, ValidarDados 
+import webbrowser 
 
+url = 'https://vandersonrecruta.github.io/SushiHashi/' # url do site sushi hashi 
 # Conectando ao banco de dados
 conexao = mysql.connector.connect(
     host='localhost',
@@ -65,6 +67,7 @@ try:
                     continue
             else:
                 print('\033[36mLogin bem sucedido!\033[m')
+                webbrowser.open(url)
         elif opcao == 2:
             # Opção de cadastro
             Cabecalho('cadastro')
@@ -156,3 +159,4 @@ finally:
     # Encerra a conexão com o banco de dados
     cursor.close()
     conexao.close()
+
